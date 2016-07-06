@@ -4,13 +4,121 @@
     width: 600px;
 }
 
-.vid-data{
+.vid-data,.vid-data2{
 	position: absolute;
-	width: 100px;
-	height: 50px;
+	width: 219px;
+	height: 175px;
 	background-color: #fff;
 	border: 1px solid #efefef;
-	top: 50px;
-    left: 20%;
+	top: 68px;
+    left: 25%;
+	display: none;
+	z-index:1;
+
+}
+.pop1{
+	font-size: 14px;
+    margin-left: 3px;
+}
+.pop2{
+	font-size: 14px;
+    margin-top: 12px;
+    margin-left: 3px;
+}
+.vid-data button{
+	padding: 6px;
+	color: black;
+	background-color: #008CBA;
+	border: 2px solid #008CBA;
+	border-radius: 10%;
+	margin: 12px;
+}
+.pop1 input{
+	margin-left: 13px;
+	margin-bottom: 12px;
+}
+.pop2 input{
+	margin-left: 11px;
+	margin-bottom: 14px;
+
+}
+div #video_control_bar{
+	background-color: black;
+	color: #ccc;
+	padding: 17px;
+	z-index: 2147483647;
+}
+
+#myfirstVideo{
+	width: 100%;
+}
+h5{
+	font-size: 15px;
+	margin-top: 10px;
+}
+#volumeslider{
+	width: 10%;
+}
+input[type='range']{
+	-webkit-appearance: none !important;
+	background-color: gray;
+	border: 1px solid #666;
+	height: 4px;
+	width: 100%;
+}
+input[type='range']::-webkit-slider-thumb{
+	-webkit-appearance: none !important;
+	background-color: #fff;
+	height: 15px;	
+	width: 10px;
+	border-radius: 100%;
+	cursor: pointer;
+}
+#mutebtn{
+	background: url('../Images/icon4.png') no-repeat ;
+	background-size: 100%;
+	padding: 20px;
+	padding: 20px;
+	border: 1px solid black;
+}
+.brekpt{
+	background-color: red;
+	border-radius: 100%;
+	position: absolute;
+	top: -8px;
+	padding: 5px;
+    left: 63px;
+}
+.brekpt1{
+	background-color: red;
+	border-radius: 100%;
+	top: -8px;
+	padding: 5px;
+	position: absolute;
+	left: 142px;
+
+}
+.bPt{
+    display: inline-block;
+	position: relative;
+	width: 40%;
+	text-align: center;
+}
+#playpausebutton{
+	background: url('../Images/icon3.png') 0 0 no-repeat;
+	background-size: 80%;
+	padding: 19px;
+	border: 1px solid black;
+}
+#fullscreenbtn{
+	background: url('../Images/fullscreen1.png') no-repeat;
+	background-size: 100%;
+	padding:19px 12px 8px 17px;
+	border: 1px solid black;
+}
+video::-webkit-media-controls{
 	display: none;
 }
+
+
+

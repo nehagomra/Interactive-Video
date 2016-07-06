@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interactive Video</title>
+	<link type="text/css" rel="stylesheet" href="css/CSS.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+</head>
+  <body>
+	<!--<button onclick="setCurTime()" type="button">Set time position to 5 seconds</button>-->
+
+		<div class="vid-cont">
+			<div class="vid-data">
+			    <h5>Choose the elements present so far in video</h5>
+				<form class="pop1">
+				    <input name="myInput" id="name1" value="light" type="checkbox">Green Leaf</input>
+                    <input name="myInput" id="name2" value="light" type="checkbox">Water-Drops</input>
+                    <input name="myInput" id="name3" value="light" type="checkbox">Sunlight</input>
+                </form>
+			        <button onclick="popUp1()" id="demo" >Check</button>
+			</div>
+			<div class="vid-data2">
+			    <h5>Choose the correct element seen in the video.</h5>
+			    <form class="pop2">	
+                    <input name="myInput" id="xyz1"  type="checkbox" >Home</input>
+				    <input name="myInput" id="xyz2" type="checkbox">Work</input>
+                    <input name="myInput" id="xyz3"  type="checkbox">Contact</input>
+					<input name="myInput" id="xyz4" type="checkbox">PageNo.</input>
+				</form>
+				  <button onclick="popUp2()" id="trail" >Check</button>
+		    </div>
+			    <video  id="myfirstVideo" width="500" height="300" >
+			  <source src="Video/Short video clip-nature.mp4-SD.mp4" type="video/mp4">
+			    </video>
+				
+			<div id="video_control_bar">
+			     <button id="playpausebutton"></button>
+				 <div class="bPt"><span class="brekpt"></span><span class="brekpt1"></span><input id="seekslider" type="range" min="0" max="100" value="0" step="1"></div>
+			     <span id="curtimetext"></span> / <span id="durtimetext"></span>
+				 <button id="mutebtn"></button>
+				 <input id="volumeslider" type="range" min="0" max="100" value="100" step="1">
+				 <button id="fullscreenbtn"  onclick="myFunction()" class="videoCont"=""></button>
+			</div>
+		</div>
+     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	 <script  type="text/javascript" src="js/newjs.js"></script>
+  </body>
+</html>
+
+
+
+
